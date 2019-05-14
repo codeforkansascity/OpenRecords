@@ -1,6 +1,6 @@
-# MuckRock
+# Open Records Project
 
-[![Codeship Status for MuckRock/muckrock][codeship-img]][codeship]
+[![Codeship Status for Open Records Project][codeship-img]][codeship]
 [![codecov.io][codecov-img]][codecov]
 
 ## Software Versions
@@ -12,23 +12,23 @@ The following instructions were tested to work with the following software versi
 
 ## Install
 
-1. Check out the git repository - `git clone git@github.com:MuckRock/muckrock.git`
-2. Enter the directory - `cd muckrock`
+1. Check out the git repository - `git clone git@github.com:codeforkansascity/OpenRecords.git`
+2. Enter the directory - `cd OpenRecords`
 3. Set up your virtual machine
     1. Install [Vagrant][vagrant] and [VirtualBox][virtualbox]
     2. Run `vagrant up` (this will take a while)
         1. You will see the following error: `==> default: mesg: ttyname failed: Inappropriate ioctl for device`.  It can be safely ignored.
     3. Run `vagrant ssh` to ssh into the virtual machine
-4. You may edit the file `~/muckrock/.settings.sh` if you would like to set up accounts and passwords for any external providers - you should be able to develop without these unless you specifically need to use and test them
+4. You may edit the file `~/OpenRecords/.settings.sh` if you would like to set up accounts and passwords for any external providers - you should be able to develop without these unless you specifically need to use and test them
 
-You should have a fully populated MuckRock site set up locally now.
+You should have a fully populated Open Records site set up locally now.
 The code checked out from GitHub is synced between the virtual machine and your host machine, so you may edit the code using your favorite text editor locally while running the code from within the virtual machine.
 
 ## Develop
 
 ### Run
 
-1. The following commands should be run from the MuckRock directory inside the virtual machine: `cd muckrock`
+1. The following commands should be run from the OpenRecords directory inside the virtual machine: `cd OpenRecords`
 2. Run `npm run build` to rebuild the javascript and css
     * NOTE: This only needs to be run if you change any javascript or scss files, it will be built for you initially
 3. Run `fab mail` to start a background email server (in order to log email sent during development)
@@ -56,8 +56,8 @@ After entering your dependency in the `.in` file, run `fab pip-compile` to canon
 
 * Test your code in one of two ways:
     * Run `fab test` to run all the tests.
-    * Run `fab test:muckrock.<app>` to test a particular application.
-    * Run `fab test:muckrock,1` to reuse the database between tests, which saves a ton of time.
+    * Run `fab test:OpenRecords.<app>` to test a particular application.
+    * Run `fab test:OpenRecords,1` to reuse the database between tests, which saves a ton of time.
 * Lint your Python by running `fab pylint`.
 * Lint your Javascript by running `npm run lint`.
 * All code should be formatted by `yapf` and `isort`.  You can format your code by running `fab format`.  It may be helpful to set up your editor to autoformat your code upon saving.
