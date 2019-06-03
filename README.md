@@ -12,6 +12,8 @@ The following instructions were tested to work with the following software versi
 
 ## Install
 
+NOTE: The following installation instructions are updated to reflect the Open Records project. However, they will not work until the code is updated.
+
 1. Check out the git repository - `git clone git@github.com:codeforkansascity/OpenRecords.git`
 2. Enter the directory - `cd OpenRecords`
 3. Set up your virtual machine
