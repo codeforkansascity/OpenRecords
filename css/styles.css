@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#nav-bar {
+    overflow: hidden;
+    background-color: #6b48ff;
+    position: sticky;
+    top:0;
+}
+
+#nav-bar a {
+    float: left;
+    display: block;
+    color: #f2f4f6;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-right-style: solid;
+}
+
+#nav-bar a:hover {
+    background-color: #2800d2;
+    color: #f2f4f6;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  #nav-bar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#image_wrapper {
+    padding-top: 4.25rem;
+    width: 100%;
+    height: 20rem;
+    background-image: url("https://drive.google.com/uc?id=1tiaA0c9_08ekmPdhWXVNZzVKE8FgrvP-");
+    background-size: 100% 100%;
+}
+
+header {
+    text-align: center;
+    color: #0d3f67;
+    background-color: transparent;
+}
+
+#image_wrapper p {
+    text-align: center;
+    padding: 25px 200px 25px 200px;
+    line-height: 1.6;
+    font-size: large;
+    background-color: transparent;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 225%;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+}
+
+.title {
+    background-color: #f2f4f6;
+}
+
+#accordian-wrapper {
+  display: inline-block;
+  width: 45%;
+}
+
+#custodians{
+    text-align: center;
+    padding: 25px 5px 25px 5px;
+    line-height: 1.6;
+    /*background-image: linear-gradient(#c5c7c8, #f2f4f6);*/
+    font-size: large;
+    background-color: #f2f4f6;
+}
+
+#custodians p {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1.25em;
+    margin-left: 0;
+}
+
+#custodians a:visited {
+    color: #2800d2;
+}
+
+#ksWrapper, #moWrapper {
+display: inline-block;
+}
+
+#states {
+    background-color:#f2f4f6;
+    text-align: center;
+}
+
+.state {
+    color: #e8604c;
+}
+
+#OpenRecords{
+    clear:both;
+    padding:20px 10px;
+    background:#1ee3cf;
+    text-align:center;
+}
+
+#OpenRecords p {
+    margin:0;
+    text-align: left;
+    font-weight: bold;
+}
+
+* html #OpenRecords {
+    height:1px;
+}
+
+#OpenRecords a {
+    color: #e8604c;
+    background-color: #f2f4f6;
+}
+
+#OpenRecords a:hover {
+    color: black;
+    background-color: #f2f4f6;
+}
+
+#footer {
+    clear:both;
+    padding:5px 10px;
+    background:#1ee3cf;
+    text-align:center;
+}
+
+#footer p {
+    margin:0;
+}
+
+* html #footer {
+    height:1px;
+}
