@@ -1,0 +1,26 @@
+{
+  "name": "openrecords",
+  "version": "1.0.0",
+  "description": "Title: Open Records Project\r Introduction: An website that citizens can use to identify custodians of public municipal and county records in the Kansas City \r   metropolitan area.\r Technologies: HTML, CSS, Bootstrap\r Launch:\r Status of Project: Under development and nearing beta testing. The primary need currently is to research contact information \r   for open records custodians.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoLynneMartinez/OpenRecords.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoLynneMartinez/OpenRecords/issues"
+  },
+  "homepage": "https://github.com/JoLynneMartinez/OpenRecords#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
